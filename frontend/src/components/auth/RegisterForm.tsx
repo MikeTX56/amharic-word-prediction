@@ -29,7 +29,6 @@ export const RegisterForm: React.FC = () => {
     handleChange,
     handleBlur,
     handleSubmit,
-    setFieldError,
   } = useForm({
     initialValues: {
       email: '',

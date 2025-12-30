@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { usePrediction } from '@/hooks/usePrediction';
 import { useNotification } from '@/hooks/useNotification';
 import { formatDateTime, formatConfidence } from '@/utils/formatters';
 import Card from '../common/Card';
 import ProgressBar from '../common/ProgressBar';
 import Badge from '../common/Badge';
-import Button from '../common/Button';
 
 export const PredictionResults: React.FC = () => {
   const { currentPrediction } = usePrediction();

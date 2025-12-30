@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react';
 import { predictionService } from '@/services/predictionService';
 import { useNotification } from './useNotification';
-import type { PredictionRequest, PredictionResponse, Prediction, PredictionHistory, PredictionStats } from '@/types';
+import type { PredictionRequest, PredictionResponse, Prediction, PredictionStats } from '@/types';
 
 export const usePrediction = () => {
   const [isLoading, setIsLoading] = useState(false);

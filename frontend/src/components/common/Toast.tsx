@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import clsx from 'clsx';
 import type { Notification as NotificationType } from '@/types';
 import { useNotification } from '@/hooks/useNotification';

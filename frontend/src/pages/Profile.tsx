@@ -10,7 +10,7 @@ import Button from '@/components/common/Button';
 import Badge from '@/components/common/Badge';
 
 export const Profile: React.FC = () => {
-  const { user, refreshUser } = useAuth();
+  const { user } = useAuth();
   const { showNotification } = useNotification();
   const [isEditingPassword, setIsEditingPassword] = useState(false);
 
@@ -51,7 +51,7 @@ export const Profile: React.FC = () => {
 
       return errors;
     },
-    onSubmit: async (values) => {
+    onSubmit: async () => {
       try {
         // Simulate password change
         showNotification('success', 'Password changed successfully!');
